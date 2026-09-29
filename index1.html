@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Verdant | Luxury Landing Page</title>
+
+<!-- Google Fonts: Playfair Display for elegant headings, Poppins for clean body text -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;900&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<!-- External stylesheet -->
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============================================
+       NAVIGATION
+       ============================================ -->
+  <header>
+    <div class="logo">Ver<span>dant</span></div>
+    <nav>
+      <ul id="navMenu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- hamburger icon for mobile navigation -->
+    <div class="menu-toggle" id="menuToggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+
+  <!-- ============================================
+       HOME SECTION
+       ============================================ -->
+  <section id="home">
+    <div class="hero-content">
+      <h1>Crafted in Green, <br> Defined by <em>Elegance</em></h1>
+      <p>A refined space where nature's calm meets timeless luxury design.</p>
+      <a href="#projects" class="btn">View Our Work</a>
+    </div>
+  </section>
+
+  <!-- ============================================
+       ABOUT SECTION
+       ============================================ -->
+  <section id="about">
+    <div class="about-img">
+      <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80" alt="About Verdant">
+    </div>
+    <div class="about-text">
+      <h2>About Us</h2>
+      <p>Verdant was founded on a simple idea: luxury should feel calm, natural, and honest. We blend deep emerald tones with clean white space to create designs that breathe.</p>
+      <p>This project was created as a school requirement to demonstrate the use of HTML, CSS, and JavaScript in building a functional, aesthetic, and responsive landing page.</p>
+      <div class="about-stats">
+        <div class="stat">
+          <h3>4+</h3>
+          <p>Featured Projects</p>
+        </div>
+        <div class="stat">
+          <h3>100%</h3>
+          <p>Original Design</p>
+        </div>
+        <div class="stat">
+          <h3>HTML/CSS/JS</h3>
+          <p>Built With</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       PROJECTS SECTION — 4 boxes side by side
+       Hover on each box lifts it up (see CSS .project-box:hover)
+       ============================================ -->
+  <section id="projects">
+    <h2 class="section-title">Our Projects</h2>
+    <p class="section-subtitle">Hover over a box to see it rise — each project tells its own story.</p>
+
+    <div class="projects-grid">
+
+      <div class="project-box">
+        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=600&q=80" alt="Project One">
+        <div class="project-caption">
+          <h3>Emerald Interiors</h3>
+          <p>A luxury home concept in green tones.</p>
+        </div>
+      </div>
+
+      <div class="project-box">
+        <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=600&q=80" alt="Project Two">
+        <div class="project-caption">
+          <h3>Botanical Branding</h3>
+          <p>Nature-inspired identity design.</p>
+        </div>
+      </div>
+
+      <div class="project-box">
+        <img src="https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=600&q=80" alt="Project Three">
+        <div class="project-caption">
+          <h3>Golden Hour Studio</h3>
+          <p>Photography with a gold-green palette.</p>
+        </div>
+      </div>
+
+      <div class="project-box">
+        <img src="https://images.unsplash.com/photo-1465101162946-4377e57745c3?auto=format&fit=crop&w=600&q=80" alt="Project Four">
+        <div class="project-caption">
+          <h3>Verdant Landscapes</h3>
+          <p>Outdoor luxury landscape design.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================
+       CONTACT SECTION
+       ============================================ -->
+  <section id="contact">
+    <h2 class="section-title">Contact</h2>
+    <p class="section-subtitle">Have a question or a project in mind? Send us a message.</p>
+
+    <div class="contact-wrapper">
+      <!-- Contact form: handled purely with JS, no backend, for school demo purposes -->
+      <form class="contact-form" id="contactForm">
+        <input type="text" id="nameInput" placeholder="Your Name" required>
+        <input type="email" id="emailInput" placeholder="Your Email" required>
+        <textarea id="messageInput" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+        <p id="form-status"></p>
+      </form>
+
+      <div class="contact-info">
+        <h3>Get in Touch</h3>
+        <p>📍 123 Emerald Avenue, Green City</p>
+        <p>📞 +63 900 000 0000</p>
+        <p>✉️ hello@verdant.com</p>
+        <p>Follow us for more updates on our latest projects and design stories.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer>
+    <p>&copy; 2026 <span>Verdant</span>. Made for school project purposes.</p>
+  </footer>
+
+  <!-- External script -->
+  <script src="script.js"></script>
+
+</body>
+</html>
